@@ -32,7 +32,10 @@
 		{ "from": "ACCTNO", "to": "accountno", "type": "STRING" },
 		{ "from": "CUSTCD", "to": "customerid", "type": "STRING" },
 		{ "from": "PLAN_TYPE", "to": "accounttype", "type": "STRING" },
-		{ "from": "BRANCHCODE", "to": "branchcode", "type": "STRING" }
+		{ "from": "BRANCHCODE", "to": "branchcode", "type": "STRING" },
+		{ "from": "OPENDATE", "to": "AccountOpenedDate", "type": "STRING"},
+		{ "from": "STATUS", "to": "Status", "type": "STRING"},
+		{ "from": "STATUS", "to": "Status", "type": "STRING"}
 	],
   "mode": "UPSERT",         
   "onError": "ROW_TO_DLQ"   
@@ -97,7 +100,7 @@
 		{ "from": "CHANNELID", "to": "channelid", "type": "STRING" },
 		{ "from": "TRANSACTIONDATE", "to": "transactiondate", "type": "STRING" },
 		{ "from": "AMOUNT", "to": "amount", "type": "DOUBLE" },
-		{ "from": "DEPOSITORWITHDRAWAL", "to": "depositorwithdrawal", "type": "STRING" },
+		{ "from": "CASHFLOWTYPE", "to": "depositorwithdrawal", "type": "STRING" },
 		{ "from": "ACCOUNTCURRENCYCODE", "to": "acctcurrencycode", "type": "STRING" },
 		{ "from": "CURRENCYCODE", "to": "currencycode", "type": "STRING" },
 		{ "from": "NARRATION", "to": "narration", "type": "STRING" },
